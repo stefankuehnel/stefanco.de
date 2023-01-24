@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="avatar">
+  <div class="space">
+    <img src="/images/me.webp" alt="Stefan Kühnel" />
+  </div>
+</div>
+
+<div class="grid grid-cols-auto gap-10 items-baseline">
+  <h1>Stefan Kühnel</h1>
+  <small>(er/ihn)</small>
+</div>
+
+{{ section.content | safe }}
+
+{% endblock content %}

@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/r/github"
+  to = "https://github.com/stefankuehnel"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/r/keybase"
+  to = "https://keybase.io/stefankuehnel"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/r/mastodon"
+  to = "https://mastodon.cloud/@stefankuehnel"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/r/linkedin"
+  to = "https://linkedin.com/in/stefankuehnelofficial"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/r/youtube"
+  to = "https://youtube.com/channel/UCWMnKN0XvtxPRBdMIEwIxug"
+  status = 302
+  force = true

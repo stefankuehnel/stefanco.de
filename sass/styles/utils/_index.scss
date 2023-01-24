@@ -1,0 +1,60 @@
+.no-underline,
+.no-underline a {
+  text-decoration: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-auto {
+  grid-template-columns: auto 1fr;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-10 {
+  gap: 0.625rem; /* 10px */
+}
+
+.gap-16 {
+  gap: 1rem; /* 16px */
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-16 {
+  margin-right: 15px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.text-black {
+  color: rgb(0, 0, 0);
+}
+
+.leading-relaxed {
+  line-height: 1.75;
+}
