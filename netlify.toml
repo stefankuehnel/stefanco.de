@@ -27,3 +27,9 @@
   to = "https://youtube.com/channel/UCWMnKN0XvtxPRBdMIEwIxug"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/r/get-together"
+  to = "https://cal.com/stefankuehnel/get-together"
+  status = 302
+  force = true
