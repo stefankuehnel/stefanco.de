@@ -17,6 +17,12 @@
   force = true
 
 [[redirects]]
+  from = "/r/hackernews"
+  to = "https://news.ycombinator.com/user?id=stefankuehnel"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/r/linkedin"
   to = "https://linkedin.com/in/stefankuehnelofficial"
   status = 302
