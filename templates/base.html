@@ -30,8 +30,7 @@
 			color="#000000"
 		/>
 		<title>
-			Stefan Kühnel: {{ page.title | default(value=section.title) | safe
-			}}
+			{{ page.title | default(value=section.title) | safe }} | Stefan Kühnel
 		</title>
 		<meta name="robots" content="index,follow" />
 		<meta
@@ -41,7 +40,7 @@
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta
 			property="og:title"
-			content="Stefan Kühnel: {{ page.title | default(value=section.title) | safe }}"
+			content="{{ page.title | default(value=section.title) | safe }} | Stefan Kühnel"
 		/>
 		<meta
 			property="og:description"
@@ -51,7 +50,7 @@
 		<meta property="og:image" />
 		<meta
 			property="og:image:alt"
-			content="Stefan Kühnel: {{ page.title | default(value=section.title) | safe }}"
+			content="{{ page.title | default(value=section.title) | safe }} | Stefan Kühnel"
 		/>
 		<link rel="canonical" href="{{ current_url | safe }}" />
 		<link rel="stylesheet" href="/styles/styles.css" />
