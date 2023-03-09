@@ -39,3 +39,9 @@
   to = "https://cal.com/stefankuehnel/get-together"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/r/cloud"
+  to = "https://stefankuehnelcloud.com"
+  status = 302
+  force = true
