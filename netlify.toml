@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/docs/cv.pdf"
+  to = "https://stefankuehnel.github.io/cv/cv.pdf"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/r/github"
   to = "https://github.com/stefankuehnel"
   status = 302
