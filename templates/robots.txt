@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /jupyter/
+
+Sitemap: {{ get_url(path="sitemap.xml") }}
