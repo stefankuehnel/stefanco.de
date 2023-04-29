@@ -32,6 +32,10 @@
 		<title>
 			{{ page.title | default(value=section.title) | safe }} | Stefan Kühnel
 		</title>
+		{% if page.extra and page.extra.vcs and page.extra.repo_root %}
+			<meta name="go-import" content="{{ current_url | trim_end_matches(pat='/') | trim_start_matches(pat='https://') | trim_start_matches(pat='http://') | safe }} {{ page.extra.vcs | safe }} {{ page.extra.repo_root | safe }}">
+			<meta http-equiv="refresh" content="0;URL='{{ page.extra.repo_root | safe }}'">
+		{% endif %}
 		<meta name="robots" content="index,follow" />
 		<meta
 			name="description"

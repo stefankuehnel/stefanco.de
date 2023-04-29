@@ -8,6 +8,12 @@
 
   {{ page.content | safe }}
 
+  {% if page.extra and page.extra.vcs and page.extra.repo_root %}
+	  <p>
+	    Weiterleitung zu <a href="{{ page.extra.repo_root | safe }}" target="_blank" rel="noopener noreferrer">{{ page.extra.repo_root | safe }}</a>.
+	  </p>
+	{% endif %}
+
   <hr />
 </div>
 {% endblock content %}
