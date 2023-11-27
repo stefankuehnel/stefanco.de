@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "/docs/cv.pdf"
-  to = "https://stefankuehnel.github.io/cv/cv.pdf"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/bookprint/*"
   to = "/bookprint"
   status = 200

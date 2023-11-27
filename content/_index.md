@@ -4,7 +4,7 @@ description = "Stefan Kühnel ist ein Designer und Entwickler und lebt in Münch
 template = "index.html"
 +++
 
-Stefan Kühnel <sup class="no-underline">[CV](/docs/cv.pdf)</sup> ist ein Designer und Entwickler und lebt in München, Deutschland. Er entwickelt innovative Produkte, die es anderen ermöglichen, sich zu entfalten, kreativ und produktiv zu sein.
+Stefan Kühnel ist ein Designer und Entwickler und lebt in München, Deutschland. Er entwickelt innovative Produkte, die es anderen ermöglichen, sich zu entfalten, kreativ und produktiv zu sein.
 
 ---
 
