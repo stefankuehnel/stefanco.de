@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicons/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <title>500 | Stefan Kühnel</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Seite nicht gefunden" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="500 | Stefan Kühnel" />
+    <meta property="og:description" content="Seite nicht gefunden" />
+    <meta property="og:image" />
+    <meta property="og:image:alt" content="500 | Stefan Kühnel" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script type="application/ld+json">
+      {
+      	"@context": "https://schema.org",
+      	"@type": "Person",
+      	"@id": "{{ config | get(key="base_url") | safe }}/#person",
+      	"address": {
+      		"@type": "PostalAddress",
+      		"addressLocality": "Munich",
+      		"addressRegion": "BY",
+      		"addressCountry": "Germany"
+      	},
+      	"image": "{{ get_url(path="images/me.webp") }}",
+      	"name": "Stefan Kühnel",
+      	"birthPlace": {
+      		"@type": "Place",
+      		"address": {
+      			"@type": "PostalAddress",
+      			"addressLocality": "Munich",
+      			"addressRegion": "BY",
+      			"addressCountry": "Germany"
+      		}
+      	},
+      	"birthDate": "2000-03-01",
+      	"gender": "Male",
+      	"nationality": "German",
+      	"url": "{{ config | get(key="base_url") | safe }}/",
+      	"sameAs": [
+      		"https://youtube.com/channel/UCWMnKN0XvtxPRBdMIEwIxug",
+      		"https://linkedin.com/in/stefankuehnelofficial",
+      		"https://github.com/stefankuehnel",
+      		"https://mastodon.cloud/@stefankuehnel",
+      		"https://keybase.io/stefankuehnel"
+      	]
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      <a href="/"> &larr; Home </a>
+    </p>
+
+    <div class="leading-relaxed">
+      <h1>500</h1>
+
+      <h2>Interner Server Fehler</h2>
+      <p>Beim Bearbeiten der Anfrage ist ein unbekannter Fehler aufgetreten.</p>
+
+      <br />
+
+      <hr />
+    </div>
+    <footer>
+      <small>
+        <a href="/impressum">Impressum</a>
+        &nbsp;
+        <a href="/datenschutz">Datenschutzerklärung</a>
+      </small>
+      <br />
+      <small>
+        Zuletzt aktualisiert:
+        <script>
+          document.write(
+            new Date(document.lastModified).toLocaleDateString("de-DE", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            }) + "."
+          );
+        </script>
+        Inhalt bereitgestellt unter
+        <a
+          href="https://creativecommons.org/licenses/by-nc/3.0/deed.de"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CC BY-NC 3.0</a
+        >
+        <span>.</span>
+      </small>
+      <br />
+      <br />
+      <small>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Stefan K&uuml;hnel, Alle Rechte vorbehalten.
+      </small>
+    </footer>
+  </body>
+</html>
