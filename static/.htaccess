@@ -1,0 +1,15 @@
+RewriteEngine on 
+
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+RewriteRule ^bookprint/(.*)$ bookprint/index.html [L]
+
+Redirect 307 /r/github https://github.com/stefankuehnel
+Redirect 307 /r/keybase https://keybase.io/stefankuehnel
+Redirect 307 /r/mastodon https://mastodon.cloud/@stefankuehnel
+Redirect 307 /r/hackernews https://news.ycombinator.com/user?id=stefankuehnel
+Redirect 307 /r/linkedin https://linkedin.com/in/stefan-kuehnel
+Redirect 307 /r/youtube https://youtube.com/channel/UCWMnKN0XvtxPRBdMIEwIxug
+Redirect 307 /r/get-together https://cal.com/stefankuehnel/get-together
+Redirect 307 /r/cloud https://stefankuehnelcloud.com

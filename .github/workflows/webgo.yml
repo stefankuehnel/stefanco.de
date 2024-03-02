@@ -1,0 +1,34 @@
+name: webgo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v3
+
+      - name: "Install Zola"
+        run: |
+          curl -sSLo zola.tar.gz https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
+          tar -zxvf zola.tar.gz
+          mv zola /usr/bin
+
+      - name: "Install rclone"
+        run: sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
+      - name: "Build"
+        run: zola build
+
+      - name: "Deploy"
+        run: |-
+          rclone sync public/ :ftp:/ \
+            --ftp-host=${{ secrets.WEBGO_FTP_HOST }} \
+            --ftp-user=${{ secrets.WEBGO_FTP_USER }} \
+            --ftp-pass=$(rclone obscure ${{ secrets.WEBGO_FTP_PASSWORD }}) \
+            --ftp-explicit-tls=true

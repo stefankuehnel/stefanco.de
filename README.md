@@ -1,6 +1,6 @@
 # stefanco.de
 
-[![Netlify](../../actions/workflows/netlify.yml/badge.svg)](../../actions/workflows/netlify.yml)
+[![webgo](../../actions/workflows/webgo.yml/badge.svg)](../../actions/workflows/webgo.yml)
 
 My portfolio build with Zola.
 
@@ -34,7 +34,7 @@ The following technologies, tools and platforms were used during development.
 - **SSG**: [Zola](https://getzola.org)
 - **Styling**: [SCSS](https://sass-lang.com)
 - **CI/CD**: [GitHub Actions](https://github.com/actions)
-- **Deployment**: [Netlify](https://netlify.com)
+- **Deployment**: [webgo](https://webgo.de)
 
 ## 👷‍ Error Found?
 
