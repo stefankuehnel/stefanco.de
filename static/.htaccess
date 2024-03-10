@@ -1,9 +1,10 @@
-RewriteEngine on 
+RewriteEngine on
 
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
 
-RewriteRule ^bookprint/(.*)$ bookprint/index.html [L]
+RewriteRule ^bookprint/(._)$ bookprint/index.html [L]
+RewriteRule ^dst/(._)$ dst/index.html [L]
 
 Redirect 307 /r/github https://github.com/stefankuehnel
 Redirect 307 /r/keybase https://keybase.io/stefankuehnel
