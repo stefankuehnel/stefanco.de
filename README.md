@@ -1,69 +1,67 @@
 # stefanco.de
 
-[![webgo](../../actions/workflows/webgo.yml/badge.svg)](../../actions/workflows/webgo.yml)
+[![CI](../../actions/workflows/ci.yaml/badge.svg)](../../actions/workflows/ci.yaml)
 
-My portfolio build with Zola.
+My portfolio build with [Zola](https://getzola.org).
 
-## ⚙️ Get Started
+## Get Started
 
-You'll need [Zola](https://getzola.org) installed.
+To get started with the project, follow these steps:
 
-### Clone Repository
+1. **Clone the repository:**
 
-First of all, you need to clone the repository:
+   ```bash
+   git clone https://github.com/stefankuehnel/stefanco.de.git
+   cd stefanco.de
+   ```
+
+2. **Run the development server:**
+
+   ```bash
+   task dev
+   ```
+
+3. **Open your browser:**
+
+   Navigate to `http://localhost:1111` to see the portfolio in action.
+
+## Development
+
+This project uses [Task](https://taskfile.dev) as a task runner.
+
+### Available Tasks
 
 ```bash
-$ git clone https://github.com/stefankuehnel/stefanco.de.git
-$ cd stefanco.de
+# Run default tasks (build and deploy)
+task
+
+# Format code
+task format
+
+# Build the project
+task build
+
+# Deploy the project
+task deploy
+
+# Clean build artifacts
+task clean
 ```
 
-### Run Locally
+## Documentation
 
-Then you're able to run the project locally:
+Below you will find a list of documentation for tools used in this project.
 
-```bash
-$ zola serve --interface 0.0.0.0
-```
+- **Nix**: Nix Package Manager - [Docs](https://wiki.nixos.org/wiki/Nix)
+- **Nix Flakes**: An Experimental Feature for Managing Dependencies of Nix Projects - [Docs](https://wiki.nixos.org/wiki/Flakes)
+- **GitHub Actions**: Automation and Execution of Software Development Workflows - [Docs](https://docs.github.com/en/actions)
+- **Task**: A Task Runner for Automation - [Docs](https://taskfile.dev/)
+- **Zola**: A Static Site Generator - [Docs](https://getzola.org/documentation/)
 
-It will listen on [http://localhost:1111/](http://localhost:1111/) unless otherwise configured.
-
-## 🔨 Technology
-
-The following technologies, tools and platforms were used during development.
-
-- **SSG**: [Zola](https://getzola.org)
-- **Styling**: [SCSS](https://sass-lang.com)
-- **CI/CD**: [GitHub Actions](https://github.com/actions)
-- **Deployment**: [webgo](https://webgo.de)
-
-## 👷‍ Error Found?
+## Found a Bug?
 
 Thank you for your message! Please fill out a [bug report](../../issues/new?assignees=&labels=&template=bug_report.md&title=).
 
 ## License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
-
-```
-The MIT License (MIT)
-
-Copyright © 2023 Stefan Kühnel
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the “Software”), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
+This project is licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.txt).

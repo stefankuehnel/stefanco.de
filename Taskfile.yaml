@@ -1,0 +1,48 @@
+version: "3"
+
+dotenv:
+  - .env
+
+tasks:
+  default:
+    cmds:
+      - task: "build"
+      - task: "deploy"
+      - task: "clean"
+
+  format:
+    desc: "Format the code"
+    cmds:
+      - nix fmt
+
+  dev:
+    desc: "Run the development server"
+    cmds:
+      - zola serve
+
+  build:
+    desc: "Build the project"
+    cmds:
+      - zola build
+  
+  deploy:
+    desc: "Deploy the project"
+    deps: 
+      - build
+    cmds:
+      - >-
+        rclone sync public/ :ftp:/ \
+          --ftp-host=${FTP_HOST} \
+          --ftp-user=${FTP_USER} \
+          --ftp-pass=$(rclone obscure ${FTP_PASSWORD}) \
+          --ftp-explicit-tls=true
+    requires:
+      vars:
+        - FTP_HOST
+        - FTP_USER
+        - FTP_PASSWORD
+
+  clean:
+    desc: "Clean build artifacts"
+    cmds:
+      - rm -rf public
